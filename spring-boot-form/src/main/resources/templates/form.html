@@ -6,6 +6,9 @@
 <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
 </head>
 <body>
+<!-- Datos del interceptor, importados desde una plantilla -->
+	<section th:replace="componentes/tiempoTranscurrido:: interceptor"></section>
+
 	<h3 th:text="${titulo}"></h3>
 	<!-- Con esto enviamos los datos a /form -->
 	<div class="container">
